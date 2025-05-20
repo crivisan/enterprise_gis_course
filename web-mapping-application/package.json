@@ -1,0 +1,27 @@
+{
+  "name": "web-mapping-app",
+  "version": "1.0.0",
+  "description": "Some info here",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.html",
+    "build": "parcel build --public-url . index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crivisan/enterprise_gis_course.git"
+  },
+  "author": "Cristhian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/crivisan/enterprise_gis_course/issues"
+  },
+  "homepage": "https://github.com/crivisan/enterprise_gis_course#readme",
+  "dependencies": {
+    "ol": "^10.5.0"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  }
+}
