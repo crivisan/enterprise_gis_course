@@ -61,3 +61,29 @@
 #popup a:link {
     text-decoration: none;
 }
+
+#draggable-header a:link {
+    text-decoration: none;
+}
+
+
+/* Draggable Style*/
+#draggable {
+    position: absolute;
+    z-index: 9;
+    background-color: #f1f1f1;
+    border: 1px solid #d3d3d3;
+    text-align: left;
+    top: 70px;
+    left: 70px;
+    padding: 3px;
+    display: none;
+}
+
+#draggable-header {
+    padding: 1px;
+    cursor: move;
+    z-index: 10;
+    background-color: #2196F3;
+    color: #fff;
+}

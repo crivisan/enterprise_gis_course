@@ -25,7 +25,7 @@
             <a class="navbar-brand" href="#">Web GIS App</a>
             <ul class="navbar-nav me-auto mt-2 mt-lg-0">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#"><span class="badge bg-info text-dark">Layers</span></a>
+                    <a class="nav-link" href="#"><span class="badge bg-info text-dark" id="layers">Layers</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#"><span class="badge bg-info text-dark">Measure</span></a>
@@ -41,6 +41,20 @@
     <!-- Map Div -->
     <div id="map"></div>
 
+    <!-- Draggable DIV -->
+    <div id="draggable">
+        <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
+        <div id="draggable-header">
+            <div id="draggable-title">Title</div>
+            <a href="#" id="draggable-closer" class="ol-popup-closer"></a>
+        </div>
+        <div id="draggable-content">
+            <p>Move</p>
+            <p>this</p>
+            <p>DIV</p>
+        </div>
+    </div>
+
     <!-- Popup Div -->
     <div id="popup" class="ol-popup">
         <a href="#" id="popup-closer" class="ol-popup-closer"></a>
@@ -52,6 +66,7 @@
     </div>
     <script src="./scripts/mapOwnLayers.js"></script>
     <script src="./scripts/identify.js"></script>
+    <script src="./scripts/layers.js"></script>
 </body>
 
 </html>
