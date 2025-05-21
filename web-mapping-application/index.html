@@ -28,7 +28,7 @@
                     <a class="nav-link" href="#"><span class="badge bg-info text-dark" id="layers">Layers</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><span class="badge bg-info text-dark">Measure</span></a>
+                    <a class="nav-link" href="#"><span class="badge bg-info text-dark" id="measure">Measure</span></a>
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
@@ -64,9 +64,19 @@
             <div id="no-features"></div>
         </div>
     </div>
+
+    <!-- Measurement tool -->
+    <form>
+        <label for="type">Measurement type &nbsp;</label>
+        <select id="type">
+            <option value="length">Length (LineString)</option>
+            <option value="area">Area (Polygon)</option>
+        </select>
+    </form>
     <script src="./scripts/mapOwnLayers.js"></script>
     <script src="./scripts/identify.js"></script>
     <script src="./scripts/layers.js"></script>
+    <script src="./scripts/measure.js"></script>
 </body>
 
 </html>
