@@ -30,11 +30,17 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#"><span class="badge bg-info text-dark" id="measure">Measure</span></a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="coordinates"></a>
+                </li>
             </ul>
+
             <form class="form-inline my-2 my-lg-0">
-                <input type="search" class="form-control mr-sm-2" placeholder="Parcel Number" aria-label="Search">
-                <input type="search" class="form-control mr-sm-2" placeholder="Block Number" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="button">Search</button>
+                <input type="search" class="form-control mr-sm-2" placeholder="Parcel Number" id="parcelInput"
+                    aria-label="Search">
+                <input type="search" class="form-control mr-sm-2" placeholder="Block Number" id="blockInput"
+                    aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="button" id="search">Search</button>
             </form>
         </div>
     </nav>
@@ -77,6 +83,8 @@
     <script src="./scripts/identify.js"></script>
     <script src="./scripts/layers.js"></script>
     <script src="./scripts/measure.js"></script>
+    <script src="./scripts/search.js"></script>
+    <script src="./scripts/coordinates.js"></script>
 </body>
 
 </html>

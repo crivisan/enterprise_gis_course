@@ -7,7 +7,8 @@ import TileLayer from 'ol/layer/Tile';
 import TileWMS from 'ol/source/TileWMS';
 import Projection from 'ol/proj/Projection';
 
-const serverURL = "http://localhost:8081/geoserver/wms";
+//const serverURL = "http://localhost:8081/geoserver/wms"; // UNPUBLISHED
+const serverURL = "http://192.168.178.30:8081/geoserver/wms" // PUBLISHED
 const mapProjection = new Projection(
     {
         code: 'EPSG:28191',

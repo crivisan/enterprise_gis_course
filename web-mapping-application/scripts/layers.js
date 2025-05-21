@@ -18,15 +18,17 @@ $('#layers').click(
         layersDiv.css('display', 'block');
 
         layers.forEach(layer => {
-            const element = `<div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id=${layer.get('name')}>
-            <label class="form-check-label" for="flexCheckChecked">
-                ${layer.get('name')}
-            </label>
-            </div>`;
-            layersDivContent.append(element);
+            if (layer.get('name')) {
+                const element = `<div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id=${layer.get('name')}>
+                <label class="form-check-label" for="flexCheckChecked">
+                    ${layer.get('name')}
+                </label>
+                </div>`;
+                layersDivContent.append(element);
 
-            $(`#${layer.get('name')}`).prop('checked', layer.getVisible());
+                $(`#${layer.get('name')}`).prop('checked', layer.getVisible());
+            }
         });
 
         $('.form-check-input').change(function () {
@@ -52,7 +54,7 @@ function dragElement(elmnt) {
     var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
     if (document.getElementById(elmnt.id + "-header")) {
         // if present, the header is where you move the DIV from:
-        document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+        document.getElementById(elmnt.id + "-header").onmousedown = dragMouseDown;
     } else {
         // otherwise, move the DIV from anywhere inside the DIV:
         elmnt.onmousedown = dragMouseDown;
