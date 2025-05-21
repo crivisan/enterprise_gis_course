@@ -26,7 +26,8 @@ const orthophotoSource = new TileWMS(
 );
 
 const orthophotoLayer = new TileLayer({
-    source: orthophotoSource
+    source: orthophotoSource,
+    name: 'Orthophoto'
 });
 
 const parcelsSource = new ImageWMS(
@@ -36,7 +37,8 @@ const parcelsSource = new ImageWMS(
     }
 )
 const parcelsLayer = new ImageLayer({
-    source: parcelsSource
+    source: parcelsSource,
+    name: 'Parcels'
 })
 
 const buildingsSource = new ImageWMS(
@@ -46,7 +48,8 @@ const buildingsSource = new ImageWMS(
     }
 )
 const buildingsLayer = new ImageLayer({
-    source: buildingsSource
+    source: buildingsSource,
+    name: 'Buildings'
 })
 
 const view = new View(
@@ -65,3 +68,9 @@ const map = new Map(
         view: view
     }
 );
+
+
+// map constant is bounted to map div
+//   initially it pops an error since we have to install jqueryy 
+//   npm install jquery
+$('#map').data('map', map); // Attach map to DOM element

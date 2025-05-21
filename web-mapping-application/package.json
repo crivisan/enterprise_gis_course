@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/crivisan/enterprise_gis_course#readme",
   "dependencies": {
+    "jquery": "^3.7.1",
     "ol": "^10.5.0"
   },
   "devDependencies": {

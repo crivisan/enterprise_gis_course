@@ -38,8 +38,20 @@
             </form>
         </div>
     </nav>
+    <!-- Map Div -->
     <div id="map"></div>
-    <script src="./scripts/map_w_own_layers.js"></script>
+
+    <!-- Popup Div -->
+    <div id="popup" class="ol-popup">
+        <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+        <div id="popup-content">
+            <div id="parcel-info"></div>
+            <div id="building-info"></div>
+            <div id="no-features"></div>
+        </div>
+    </div>
+    <script src="./scripts/mapOwnLayers.js"></script>
+    <script src="./scripts/identify.js"></script>
 </body>
 
 </html>
